@@ -20,4 +20,7 @@ In order to be for Arduino IDE to find this file this file needs to be included 
 ## Adding the file to the sketch
 You can add the secrets.h file to the sketch itself by following two ways
 1. In the Arduino IDE click on the little dropdown button at the right (below the magnifying glass) or press Ctrl + Shift + N.THe IDE will prompt you tospecify the name of the file. Enter the name as secrets.h. The Arduino IDE will open the new file in a tab. Enter the above mentioned contents in the file and save.
-1. 
+1. If you have already created the file on the disk then you can include the file in Arduino IDE via Sketch > Add File option.
+
+## Keeping the secrets file outside the sketch
+Keeping the secrets file outside the sketch would make sense if you wantto share te file amon different sketches or if you intend to share the sketch and don't want the your network secrets to be included  in the sketch (they are secrets after all). In order to do so keep the secrets.h file in the <Arduino-Installation-Folder>\hardware\libraries path. You can also create a folder in this path and place the secrets.h in this folder. 
